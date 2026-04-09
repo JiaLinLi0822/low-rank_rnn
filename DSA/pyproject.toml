@@ -1,0 +1,32 @@
+[project]
+name = "dsa-metric"
+version = "1.0.2"
+authors = [
+  { name="Mitchell Ostrow", email="ostrow@mit.edu" },
+]
+description = "Dynamical Similarity Analysis"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENSE*"]
+
+dependencies = [
+    "numpy>=1.24.0,<2",
+    "torch>=1.3.0",
+    "kooplearn>=1.1.0",
+    "pot",
+    "omegaconf",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=3.7"
+]
+
+[project.urls]
+Homepage = "https://github.com/mitchellostrow/DSA"
+Issues = "https://github.com/mitchellostrow/DSA/issues"
